@@ -1,10 +1,9 @@
 import { useState } from 'react';
 import { Header } from './components/layout/Header';
 import { Footer } from './components/layout/Footer';
-import { Hero } from './components/home/Hero';
+import { Hero } from './components/home/Home';
 import { JockeySelection } from './components/selection/JockeySelection';
 import { HorseSelection } from './components/selection/HorseSelection';
-import { PaymentForm } from './components/payment/PaymentForm';
 import { TicketGeneration } from './components/payment/TicketGeneration';
 import { ResultsDisplay } from './components/results/ResultsDisplay';
 import { SystemInfo } from './components/info/SystemInfo';
@@ -84,9 +83,8 @@ function App() {
                 <JockeySelection onNext={() => setCurrentStep('horse')} />
               )}
               {currentStep === 'horse' && (
-                <HorseSelection onNext={() => setCurrentStep('payment')} />
-              )}
-              {currentStep === 'payment' && <PaymentForm onPaymentComplete={handlePaymentComplete} />}
+                <HorseSelection onNext={() => setCurrentStep('payment')} /PaymentForm  )}
+              {currentStep === 'payment' && <CashoutProcess onPaymentComplete={handlePaymentComplete} />}
 
               {/* Navigation Buttons */}
               <div className="flex justify-between mt-8">

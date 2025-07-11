@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, Info, Shield, Award, Users, TrendingUp } from 'lucide-react';
+import { BookOpen, Info, Shield, TrendingUp } from 'lucide-react';
 import { Card } from '../common/Card';
 
 export const SystemInfo: React.FC = () => {

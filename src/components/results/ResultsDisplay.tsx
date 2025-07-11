@@ -91,7 +91,7 @@ export const ResultsDisplay: React.FC = () => {
       <Card className="p-6">
         <h3 className="text-xl font-bold text-gray-900 mb-4">過去の結果</h3>
         <div className="space-y-4">
-          {mockRaceResults.map((result, index) => (
+          {mockRaceResults.map((result) => (
             <div
               key={result.id}
               className={`p-4 rounded-lg border-2 cursor-pointer transition-all ${
