@@ -1,5 +1,5 @@
 import React from 'react';
-import { Crown, Zap, Heart, Award, Check } from 'lucide-react';
+import { Zap, Heart, Award, Check } from 'lucide-react';
 import { Card } from '../common/Card';
 import { Button } from '../common/Button';
 import { Horse } from '../../types';
