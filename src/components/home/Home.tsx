@@ -4,9 +4,10 @@ import { Button } from "../common/Button";
 
 interface HeroProps {
   onStartClick: () => void;
+  onStartinfo: () => void;
 }
 
-export const Hero: React.FC<HeroProps> = ({ onStartClick }) => {
+export const Hero: React.FC<HeroProps> = ({ onStartClick, onStartinfo }) => {
   return (
     <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white overflow-hidden">
       {/* Background Image */}
@@ -54,6 +55,7 @@ export const Hero: React.FC<HeroProps> = ({ onStartClick }) => {
               variant="outline"
               size="lg"
               className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-blue-900"
+              onClick={onStartinfo}
             >
               ルールを見る
             </Button>

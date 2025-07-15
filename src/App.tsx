@@ -23,6 +23,10 @@ function App() {
     setCurrentView('selection');
   };
 
+  const handleSysteminfo = () => {
+    setCurrentView('info');
+  } 
+
   const handleNavigation = (view: ViewType) => {
     setCurrentView(view);
   };
@@ -46,7 +50,7 @@ function App() {
   const renderCurrentView = () => {
     switch (currentView) {
       case 'home':
-        return <Hero onStartClick={handleStartClick} />;
+        return <Hero onStartClick={handleStartClick} onStartinfo={handleSysteminfo} />;
       
       case 'selection':
         return (
@@ -83,8 +87,8 @@ function App() {
                 <JockeySelection onNext={() => setCurrentStep('horse')} />
               )}
               {currentStep === 'horse' && (
-                <HorseSelection onNext={() => setCurrentStep('payment')} /PaymentForm  )}
-              {currentStep === 'payment' && <CashoutProcess onPaymentComplete={handlePaymentComplete} />}
+                <HorseSelection onNext={() => setCurrentStep('payment')}/>)}
+              {currentStep === 'payment' && <CashoutProcess onComplete={handlePaymentComplete} />}
 
               {/* Navigation Buttons */}
               <div className="flex justify-between mt-8">
