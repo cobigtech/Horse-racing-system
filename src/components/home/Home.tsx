@@ -9,7 +9,7 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ onStartClick, onStartinfo }) => {
   return (
-    <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white overflow-hidden">
+    <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white overflow-hidden opacity-3">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-20"
@@ -65,9 +65,6 @@ export const Hero: React.FC<HeroProps> = ({ onStartClick, onStartinfo }) => {
           
         </div>
       </div>
-
-      {/* Animated Elements */}
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent" />
     </section>
   );
 };
