@@ -1,5 +1,5 @@
 import React from "react";
-import { Zap, Crown, Shield, Award } from "lucide-react";
+import { Zap, Crown} from "lucide-react";
 import { Button } from "../common/Button";
 
 interface HeroProps {
@@ -62,31 +62,7 @@ export const Hero: React.FC<HeroProps> = ({ onStartClick, onStartinfo }) => {
           </div>
 
           {/* Feature Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
-              <Shield className="h-8 w-8 text-yellow-400 mx-auto mb-4" />
-              <h3 className="text-lg font-semibold mb-2">安全・安心</h3>
-              <p className="text-gray-300 text-sm">
-                最高レベルのセキュリティで、あなたの資金と個人情報を保護します。
-              </p>
-            </div>
-
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
-              <Award className="h-8 w-8 text-yellow-400 mx-auto mb-4" />
-              <h3 className="text-lg font-semibold mb-2">高配当</h3>
-              <p className="text-gray-300 text-sm">
-                業界最高水準の配当率で、大きな勝利のチャンスを提供します。
-              </p>
-            </div>
-
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
-              <Crown className="h-8 w-8 text-yellow-400 mx-auto mb-4" />
-              <h3 className="text-lg font-semibold mb-2">プレミアム体験</h3>
-              <p className="text-gray-300 text-sm">
-                最新の技術と美しいデザインで、最高のベッティング体験を。
-              </p>
-            </div>
-          </div>
+          
         </div>
       </div>
 

@@ -4,7 +4,7 @@ export const jockeys: Jockey[] = [
   {
     id: 1,
     name: "Takeshi Yamamoto",
-    image: "https://images.pexels.com/photos/1154834/pexels-photo-1154834.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "E://Imagehorse.jpeg racing?auto=compress&cs=tinysrgb&w=400",
     wins: 245,
     races: 850,
     winRate: 28.8,

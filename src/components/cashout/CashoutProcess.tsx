@@ -25,11 +25,11 @@ export const CashoutProcess: React.FC<CashoutProcessProps> = ({ onComplete, onCa
   const predefinedAmounts = [1000, 2000, 5000, 10000, 20000, 50000];
   
   const getMultiplier = (amount: number) => {
-    if (amount >= 50000) return 8.5;
-    if (amount >= 20000) return 6.2;
-    if (amount >= 10000) return 4.8;
-    if (amount >= 5000) return 3.5;
-    if (amount >= 2000) return 2.8;
+    if (amount >= 50000) return 8.0;
+    if (amount >= 20000) return 4.0;
+    if (amount >= 10000) return 2.0;
+    if (amount >= 5000) return 1.5;
+    if (amount >= 2000) return 1.2;
     return 2.0;
   };
 

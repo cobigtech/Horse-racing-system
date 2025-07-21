@@ -17,23 +17,23 @@ export const Header: React.FC = () => {
           </div>
 
           <nav className="hidden md:flex items-center space-x-6">
-            <a href="#home" className="hover:text-yellow-400 transition-colors">
+            <a href="home" className="hover:text-yellow-400 transition-colors">
               ホーム
             </a>
             <a
-              href="#rules"
+              href="rules"
               className="hover:text-yellow-400 transition-colors"
             >
               ルール
             </a>
             <a
-              href="#results"
+              href="results"
               className="hover:text-yellow-400 transition-colors"
             >
               結果
             </a>
             <a
-              href="#about"
+              href="about"
               className="hover:text-yellow-400 transition-colors"
             >
               概要

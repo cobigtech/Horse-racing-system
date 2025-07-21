@@ -21,6 +21,27 @@ export const ResultsDisplay: React.FC = () => {
         <h2 className="text-3xl font-bold text-gray-900 mb-2">レース結果</h2>
         <p className="text-gray-600">最新のレース結果をご確認ください</p>
       </div>
+       {/* Statistics */}
+       <Card className="p-6 bg-gradient-to-r from-purple-50 to-pink-50 border-purple-200">
+        <div className="flex items-center mb-4">
+          <TrendingUp className="h-6 w-6 text-purple-500 mr-2" />
+          <h3 className="text-xl font-bold text-gray-900">統計情報</h3>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="text-center">
+            <div className="text-2xl font-bold text-purple-600">25,847</div>
+            <div className="text-sm text-gray-600">総参加者数</div>
+          </div>
+          <div className="text-center">
+            <div className="text-2xl font-bold text-purple-600">¥1,247,832</div>
+            <div className="text-sm text-gray-600">今月の総配当</div>
+          </div>
+          <div className="text-center">
+            <div className="text-2xl font-bold text-purple-600">23.4%</div>
+            <div className="text-sm text-gray-600">平均当選率</div>
+          </div>
+        </div>
+      </Card>
 
       {/* Latest Result Highlight */}
       <Card className="p-6 bg-gradient-to-r from-yellow-50 to-orange-50 border-yellow-200">
